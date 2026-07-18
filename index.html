@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Brain Test</title>
-<meta name="description" content="Privacy policy for the Brain Test mobile game.">
+<meta name="description" content="Privacy policy for Brain Test, developed by Edgehog.">
 <style>
   :root {
     color-scheme: light dark;
@@ -14,6 +14,7 @@
     --marker: #d23b2f;
     --panel: #ffffff;
     --border: #e5ded0;
+    --chip: rgba(210,59,47,.08);
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -23,6 +24,7 @@
       --marker: #ff6b5b;
       --panel: #1e1b17;
       --border: #34302a;
+      --chip: rgba(255,107,91,.12);
     }
   }
   * { box-sizing: border-box; }
@@ -31,32 +33,45 @@
     background: var(--bg);
     color: var(--ink);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.65;
   }
   .wrap {
-    max-width: 680px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 48px 24px 80px;
   }
   h1 {
     font-size: 2rem;
-    margin: 0 0 4px;
+    margin: 0 0 6px;
     color: var(--marker);
+  }
+  .byline {
+    font-size: 1rem;
+    color: var(--sub);
+    margin-bottom: 4px;
   }
   .updated {
     color: var(--sub);
-    font-size: 0.9rem;
-    margin-bottom: 32px;
+    font-size: 0.85rem;
+    margin-bottom: 28px;
   }
   h2 {
     font-size: 1.15rem;
-    margin: 36px 0 10px;
+    margin: 40px 0 10px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 6px;
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin: 20px 0 8px;
+    color: var(--sub);
+    text-transform: uppercase;
+    letter-spacing: .04em;
   }
   p, li { color: var(--ink); }
   strong { color: var(--ink); }
   ul { padding-left: 22px; }
+  li { margin-bottom: 4px; }
   a { color: var(--marker); }
   .card {
     background: var(--panel);
@@ -68,51 +83,158 @@
     font-size: 1.05rem;
     color: var(--sub);
   }
+  .status {
+    display: inline-block;
+    background: var(--chip);
+    color: var(--marker);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  .note {
+    background: var(--chip);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    margin-top: 14px;
+  }
+  .toc {
+    columns: 2;
+    gap: 24px;
+    font-size: 0.92rem;
+    padding-left: 18px;
+  }
+  .toc li { margin-bottom: 6px; }
+  footer {
+    text-align: center;
+    color: var(--sub);
+    font-size: 0.8rem;
+    margin-top: 28px;
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="card">
     <h1>Privacy Policy</h1>
+    <div class="byline">Brain Test is developed and published by <strong>Edgehog</strong>.</div>
     <div class="updated">Last updated: 18 July 2026</div>
 
-    <p class="intro">Brain Test ("the app") is a single-player puzzle game. Your privacy is
-    simple to explain because the app is built to need nothing from you.</p>
+    <p class="intro">Brain Test is a single-player puzzle game. This policy explains what the
+    app does today, and — because apps evolve — what may change as it grows, so you always
+    know what to expect.</p>
 
-    <h2>What we collect</h2>
-    <p><strong>Nothing.</strong> The app does not collect, transmit, or share any personal
-    information. There are no accounts, no sign-up, and no login.</p>
+    <ul class="toc">
+      <li><a href="#today">What the app does today</a></li>
+      <li><a href="#device">Data stored on your device</a></li>
+      <li><a href="#future">As the app grows</a></li>
+      <li><a href="#thirdparty">Third-party services</a></li>
+      <li><a href="#permissions">Permissions</a></li>
+      <li><a href="#choices">Your choices</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#retention">Data retention &amp; deletion</a></li>
+      <li><a href="#international">International users</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-    <h2>Data stored on your device</h2>
+    <h2 id="today">What the app does today</h2>
+    <span class="status">Current status: no data collected</span>
+    <p>As of the date above, Brain Test <strong>does not collect, transmit, or share any
+    personal information</strong>. There are no accounts, no sign-up, and no login. The app
+    makes <strong>no network requests</strong> and contains <strong>no advertising and no
+    analytics or tracking SDKs</strong>. It works fully offline.</p>
+
+    <h2 id="device">Data stored on your device</h2>
     <p>The app saves the following <strong>only on your device</strong>, using local storage,
     so your game works the way you left it:</p>
     <ul>
       <li>Your level progress and best times/stars</li>
       <li>Your settings (theme, timer, confetti, one-stroke mode)</li>
     </ul>
-    <p>This information never leaves your device. It is not sent to us or to any third
+    <p>This information never leaves your device. It is not sent to Edgehog or to any third
     party. Uninstalling the app, or clearing the app's storage, permanently removes it.</p>
 
-    <h2>Network, ads, and analytics</h2>
-    <p>The app makes <strong>no network requests</strong>. It contains <strong>no
-    advertising</strong> and <strong>no analytics or tracking</strong> SDKs of any kind. It
-    works fully offline.</p>
+    <h2 id="future">As the app grows</h2>
+    <p>Brain Test is actively developed, and future versions may introduce features that were
+    not part of the app on the date above — for example:</p>
+    <h3>Advertising</h3>
+    <p>We may integrate an ad network (such as Google AdMob) to show ads in the app. Ad
+    networks typically use an advertising identifier, general device information, coarse
+    location (such as country or region derived from IP address), and ad-interaction data
+    (impressions, clicks) to serve and measure ads. Some ads may be personalized based on
+    this information unless you opt out (see <a href="#choices">Your choices</a>).</p>
+    <h3>Analytics and crash reporting</h3>
+    <p>We may add analytics or crash-reporting tools (such as Firebase Analytics or
+    Crashlytics) to understand how the app is used and to fix bugs. These typically collect
+    device information, app version, usage events (e.g. which screens are opened, which
+    puzzles are played), and diagnostic/crash logs. This data is generally tied to a device
+    or install identifier rather than your real-world identity.</p>
+    <h3>Accounts and cloud save</h3>
+    <p>If we ever add optional sign-in (for example, to sync progress across devices), it
+    would be opt-in, and this policy would be updated first to describe exactly what account
+    data is collected and how it's used.</p>
+    <div class="note">Whenever any of the above is added, we will update this policy
+    <strong>before</strong> the feature ships, update the "Data safety" section of the app's
+    Play Store listing to reflect it accurately, and note it in the app's release notes. We
+    will not silently start collecting data that isn't disclosed here.</div>
 
-    <h2>Permissions</h2>
+    <h2 id="thirdparty">Third-party services</h2>
+    <p>Brain Test currently uses no third-party SDKs. If advertising, analytics, or crash
+    reporting is added in the future, the specific providers in use (e.g. Google AdMob,
+    Firebase) will be listed here by name, along with links to their own privacy policies,
+    since those companies process data under their own terms as well as ours.</p>
+
+    <h2 id="permissions">Permissions</h2>
     <p>The app requests no sensitive device permissions (no location, contacts, camera,
-    microphone, or storage-access permissions).</p>
+    microphone, or storage-access permissions). If a future feature requires a new
+    permission, Android will prompt you for it at that time, and this policy will explain
+    why it's needed.</p>
 
-    <h2>Children</h2>
-    <p>The app is suitable for all ages and does not knowingly collect any data from
-    anyone, including children.</p>
+    <h2 id="choices">Your choices</h2>
+    <p>Because nothing is collected today, there is currently nothing to opt out of. Once
+    ads or analytics are introduced, you will generally be able to:</p>
+    <ul>
+      <li>Reset or limit your device's advertising identifier in your phone's system
+        settings (Settings → Privacy → Ads, or equivalent)</li>
+      <li>Opt out of personalized ads where the ad network supports it</li>
+      <li>Contact us (see below) with questions about data collected about your device</li>
+    </ul>
 
-    <h2>Changes to this policy</h2>
-    <p>If this policy ever changes, the updated version will be posted at the same URL
-    with a new "Last updated" date.</p>
+    <h2 id="children">Children's privacy</h2>
+    <p>The app is suitable for all ages. We do not knowingly collect personal information
+    from anyone, including children. If advertising is added in the future, we will
+    configure it to comply with applicable children's privacy laws (such as COPPA) for
+    audiences that include children, including serving only non-personalized ads where
+    required.</p>
 
-    <h2>Contact</h2>
-    <p>Questions about this policy? Contact:
+    <h2 id="retention">Data retention &amp; deletion</h2>
+    <p>Local data (progress and settings) is retained on your device until you clear the
+    app's storage or uninstall it — at which point it is permanently deleted. If we
+    introduce server-side data collection in the future, this section will be updated with
+    specific retention periods and deletion options.</p>
+
+    <h2 id="international">International users</h2>
+    <p>Brain Test can be played anywhere. Since no personal data currently leaves your
+    device, there is no international data transfer to disclose today. This section will be
+    updated if that changes.</p>
+
+    <h2 id="changes">Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted at this same URL with a
+    new "Last updated" date above. Meaningful changes (such as adding advertising or
+    analytics) will also be reflected in the app's Play Store "Data safety" section and
+    release notes.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Brain Test is developed by <strong>Edgehog</strong>. Questions about this policy or
+    your data? Contact:
     <a href="mailto:supernaturalbrian@gmail.com">supernaturalbrian@gmail.com</a></p>
+
+    <footer>© 2026 Edgehog · Brain Test</footer>
   </div>
 </div>
 </body>
