@@ -122,7 +122,7 @@
   <div class="card">
     <h1>Privacy Policy</h1>
     <div class="byline">Brain Test is developed and published by <strong>Edgehog</strong>.</div>
-    <div class="updated">Last updated: 18 July 2026</div>
+    <div class="updated">Last updated: 8 August 2026</div>
 
     <p class="intro">Brain Test is a single-player puzzle game. This policy explains what the
     app does today, and — because apps evolve — what may change as it grows, so you always
@@ -143,11 +143,43 @@
     </ul>
 
     <h2 id="today">What the app does today</h2>
-    <span class="status">Current status: no data collected</span>
-    <p>As of the date above, Brain Test <strong>does not collect, transmit, or share any
-    personal information</strong>. There are no accounts, no sign-up, and no login. The app
-    makes <strong>no network requests</strong> and contains <strong>no advertising and no
-    analytics or tracking SDKs</strong>. It works fully offline.</p>
+    <span class="status">Current status: advertising and analytics — no accounts</span>
+    <p>Brain Test <strong>does not collect your name, email address, or any other information
+    that identifies you personally</strong>. There are no accounts, no sign-up, and no login,
+    and we operate no servers of our own.</p>
+    <p>The app does show <strong>advertising</strong>. From version 1.1.0, a full-screen ad
+    from <strong>Google AdMob</strong> appears between levels — never during a puzzle, and
+    not at all until you have solved more than ten of them. To serve and measure those ads,
+    the Google Mobile Ads SDK collects and sends to Google:</p>
+    <ul>
+      <li>your device's <strong>advertising ID</strong> and general device information
+        (model, operating system version, language)</li>
+      <li><strong>approximate location</strong> — country or region derived from your IP
+        address, not GPS</li>
+      <li><strong>ad interaction data</strong> — which ads were shown, and whether they were
+        tapped</li>
+    </ul>
+    <p>Google processes this data as an independent controller under its own privacy policy.</p>
+
+    <p>The app also uses <strong>GameAnalytics</strong> to understand how the game is played,
+    so we can tell which puzzles are too hard and which parts of the game confuse people. It
+    records, against a random identifier generated on your device (not your name or account):</p>
+    <ul>
+      <li><strong>gameplay events</strong> — which level you started, finished or gave up on,
+        how long it took, how many wrong moves you made, and whether you used a hint, undo or
+        restart</li>
+      <li><strong>app usage</strong> — tutorial steps viewed, settings changed, screens opened,
+        and whether an ad was shown</li>
+      <li><strong>device and session information</strong> — device model, operating system,
+        platform, app version, and session length</li>
+      <li><strong>error reports</strong> — the message and location of any crash or unexpected
+        error, so it can be fixed</li>
+    </ul>
+    <p>This is behavioural and technical data about how the game is used. It is not sold, and
+    it is not used to identify you personally.</p>
+
+    <p>Apart from ad requests and these analytics events, the game makes no network requests:
+    the puzzles themselves work fully offline.</p>
 
     <h2 id="device">Data stored on your device</h2>
     <p>The app saves the following <strong>only on your device</strong>, using local storage,
@@ -156,24 +188,14 @@
       <li>Your level progress and best times/stars</li>
       <li>Your settings (theme, timer, confetti, one-stroke mode)</li>
     </ul>
-    <p>This information never leaves your device. It is not sent to Edgehog or to any third
-    party. Uninstalling the app, or clearing the app's storage, permanently removes it.</p>
+    <p>This saved file itself is never uploaded anywhere. (Separately, the analytics events
+    described above do report gameplay facts such as which level you completed and how long it
+    took — but your saved progress file is not transmitted.) Uninstalling the app, or clearing
+    the app's storage, permanently removes it.</p>
 
     <h2 id="future">As the app grows</h2>
     <p>Brain Test is actively developed, and future versions may introduce features that were
     not part of the app on the date above — for example:</p>
-    <h3>Advertising</h3>
-    <p>We may integrate an ad network (such as Google AdMob) to show ads in the app. Ad
-    networks typically use an advertising identifier, general device information, coarse
-    location (such as country or region derived from IP address), and ad-interaction data
-    (impressions, clicks) to serve and measure ads. Some ads may be personalized based on
-    this information unless you opt out (see <a href="#choices">Your choices</a>).</p>
-    <h3>Analytics and crash reporting</h3>
-    <p>We may add analytics or crash-reporting tools (such as Firebase Analytics or
-    Crashlytics) to understand how the app is used and to fix bugs. These typically collect
-    device information, app version, usage events (e.g. which screens are opened, which
-    puzzles are played), and diagnostic/crash logs. This data is generally tied to a device
-    or install identifier rather than your real-world identity.</p>
     <h3>Accounts and cloud save</h3>
     <p>If we ever add optional sign-in (for example, to sync progress across devices), it
     would be opt-in, and this policy would be updated first to describe exactly what account
@@ -184,44 +206,63 @@
     will not silently start collecting data that isn't disclosed here.</div>
 
     <h2 id="thirdparty">Third-party services</h2>
-    <p>Brain Test currently uses no third-party SDKs. If advertising, analytics, or crash
-    reporting is added in the future, the specific providers in use (e.g. Google AdMob,
-    Firebase) will be listed here by name, along with links to their own privacy policies,
-    since those companies process data under their own terms as well as ours.</p>
+    <p>Brain Test uses two third-party SDKs, each processing data under its own terms as
+    well as ours:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> (Google Mobile Ads SDK) — serves the ads described
+        above. See <a href="https://policies.google.com/privacy" rel="noopener">Google's
+        Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543"
+        rel="noopener">how Google uses data from apps that use its services</a>.</li>
+      <li><strong>GameAnalytics</strong> — collects the gameplay and device data described
+        above. See <a href="https://gameanalytics.com/privacy" rel="noopener">the
+        GameAnalytics privacy policy</a>.</li>
+    </ul>
 
     <h2 id="permissions">Permissions</h2>
     <p>The app requests no sensitive device permissions (no location, contacts, camera,
-    microphone, or storage-access permissions). If a future feature requires a new
-    permission, Android will prompt you for it at that time, and this policy will explain
-    why it's needed.</p>
+    microphone, or storage-access permissions). It does declare the Android advertising ID
+    permission (<code>com.google.android.gms.permission.AD_ID</code>), which the ads SDK
+    requires. If a future feature needs a new permission, Android will prompt you for it at
+    that time, and this policy will explain why it's needed.</p>
 
     <h2 id="choices">Your choices</h2>
-    <p>Because nothing is collected today, there is currently nothing to opt out of. Once
-    ads or analytics are introduced, you will generally be able to:</p>
+    <p>You can:</p>
     <ul>
-      <li>Reset or limit your device's advertising identifier in your phone's system
-        settings (Settings → Privacy → Ads, or equivalent)</li>
-      <li>Opt out of personalized ads where the ad network supports it</li>
-      <li>Contact us (see below) with questions about data collected about your device</li>
+      <li>Reset or delete your device's advertising ID in your phone's system settings
+        (Settings → Privacy → Ads, or equivalent). Deleting it stops ads being personalized
+        to you.</li>
+      <li>Change your consent choices where a consent form was shown to you. If you are in
+        the UK, the EEA, or a US state with an applicable privacy law, a consent form appears
+        the first time the app runs and records your choice. Declining means you see
+        non-personalized ads rather than no ads, and <strong>analytics events are not sent at
+        all</strong>.</li>
+      <li>Contact us (see below) with questions about data collected about your device.</li>
     </ul>
 
     <h2 id="children">Children's privacy</h2>
-    <p>The app is suitable for all ages. We do not knowingly collect personal information
-    from anyone, including children. If advertising is added in the future, we will
-    configure it to comply with applicable children's privacy laws (such as COPPA) for
-    audiences that include children, including serving only non-personalized ads where
-    required.</p>
+    <p>The app is suitable for all ages, but it is not directed at children, and we do not
+    knowingly collect personal information from children. Ad content is restricted to
+    Google's <strong>"General audiences"</strong> content rating, and the app is not flagged
+    as child-directed. Where a user is known to be under the applicable age of consent, ads
+    are served without personalization.</p>
 
     <h2 id="retention">Data retention &amp; deletion</h2>
     <p>Local data (progress and settings) is retained on your device until you clear the
-    app's storage or uninstall it — at which point it is permanently deleted. If we
-    introduce server-side data collection in the future, this section will be updated with
-    specific retention periods and deletion options.</p>
+    app's storage or uninstall it — at which point it is permanently deleted.</p>
+    <p>The advertising and analytics data described above is held by Google and
+    GameAnalytics on their own systems, under their own retention schedules, which are set
+    out in their privacy policies linked below. Because the app has no accounts, we hold no
+    profile to delete on request; what you can do instead is reset or delete your device's
+    advertising ID (see <a href="#choices">Your choices</a>), which breaks the link to any
+    future data, and decline consent where a consent form is shown to you, which stops
+    analytics events being sent at all.</p>
 
     <h2 id="international">International users</h2>
-    <p>Brain Test can be played anywhere. Since no personal data currently leaves your
-    device, there is no international data transfer to disclose today. This section will be
-    updated if that changes.</p>
+    <p>Brain Test can be played anywhere, and your saved progress file stays on your device.
+    The advertising and analytics data described above is sent to Google and to
+    GameAnalytics respectively, and may be processed on servers outside your own country —
+    including in the United States — under those companies' own terms and transfer
+    safeguards.</p>
 
     <h2 id="changes">Changes to this policy</h2>
     <p>If this policy changes, the updated version will be posted at this same URL with a
